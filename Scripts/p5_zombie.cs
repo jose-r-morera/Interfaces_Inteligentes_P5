@@ -35,10 +35,10 @@ public class p5_zombie : MonoBehaviour
     public void OnPointerEnter()
     {
         OnZombieMuerto();
-        // Se mueve aleatoriamente en los ejes x y z
-        transform.Translate(Random.Range(movement_minimum, movement_maximum), 0, Random.Range(movement_minimum, movement_maximum));
     }
     public void OnPointerExit()
     {
+        // Se mueve aleatoriamente en los ejes x y z
+        transform.Translate(Random.Range(movement_minimum, movement_maximum), 0, Random.Range(movement_minimum, movement_maximum));
     }
 }
